@@ -1,24 +1,18 @@
-# README
+# TODO APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Dependencies: 
+[docker](https://docs.docker.com/docker-for-mac/install/) - Docker is a full development platform to build, run, and share containerized applications.
 
-Things you may want to cover:
+## How to run the app?
 
-* Ruby version
+You only have to run this single command, a script will take care of the db creation for test and dev environments and the migrations.
+    
+```sh
+$ docker-compose run app
+```
 
-* System dependencies
+## How to run the test suite?
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ docker-compose run app bundle exec rspec spec/
+```
