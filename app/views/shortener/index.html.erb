@@ -1,0 +1,13 @@
+<div style="text-align: center;">
+  <h1>Short URL</h1>
+
+  <%= form_tag shortener_create_path, method: :post, remote: true   do %>
+    <%= label_tag(:original_url, 'Shorten an URL: ') %>
+    <%= text_field_tag :original_url, params[:original_url] %>
+    <%= submit_tag('Shorten URL', original_url: nil) %>
+  <% end %>
+  <br>
+
+
+</div>
+<div id="shorten_url"></div>

@@ -1,0 +1,5 @@
+<h1>Short URL </h1>
+<h1>Original URL</h1>
+<h3><%= (@original_url).gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %></h3>
+<h1>Shorten URL</h1>
+<h3><%= @short_url %></h3>
